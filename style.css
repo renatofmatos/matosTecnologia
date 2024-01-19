@@ -20,10 +20,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10%
 }
 
 .apresentacao__img {
-    width: 49%;
+    width: 50%;
     border-radius: 3%;
 }
 
@@ -61,4 +62,16 @@ body {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 
+}
+
+@media (max-width: 1200px) {
+    .apresentacao{
+        margin: 5%;
+        padding: auto;
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
 }
